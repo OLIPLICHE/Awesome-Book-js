@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Awesome Books</title>
+</head>
+<body>
+  <!-- <div class="divNavbar"> -->
+    <nav class="nav-bar navbar">
+      <span>Awesome Books</span>
+      <ul class="ulNav">
+        <li class="border-right">
+          <a onclick="show(s1)">List |</a>
+        </li>
+        <li class="border-right">
+          <a onclick="show(s2)">Add Book |</a>
+        </li>
+        <li>
+          <a onclick="show(s3)">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  <!-- </div> -->
+  <div class="timeDiv">
+    <span id="currentTime"></span>
+  </div>
+  <section class="books-list visible" id="s1">
+    <h1>Awesome books</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr class="t-raw">
+          <th>Title</th>
+          <th>Author</th>
+          <th>ID</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-list" class="bookList"></tbody>
+    </table>
+  </section>
+  <section class="addBook-section invisible" id="s2">
+    <h2>Add a new book</h2>
+    <form action="" id="book-form">
+      <div>
+        <label for="title"></label><br>
+        <input type="text" id="title" placeholder="Tittle" class="form-control"><br>
+      </div>
+      <div>
+        <label for="author"></label><br>
+        <input type="text" id="author" placeholder="Author" class="form-control">
+      </div>
+      <div class="hiddenDiv">
+        <label for="isbn"></label><br>
+        <input type="text" id="isbn" placeholder="ID" class="form-control">
+      </div>
+      <input type="submit" value="Add" class="btn">
+    </form>
+  </section>
+  <section class="contact-section invisible" id="s3">
+    <h2>Contact information</h2>
+    <div class="contact-info">
+      <p>Do have any questions or you just want to say "Hello"?<br>
+      You can reach out to us!</p>
+      <ul>
+        <li>Our e-mail: mail@mail.com</li>
+        <li>Our phone-number: 0043586534422</li>
+        <li>Our address: Streetname 22, 84603 City, Country</li>
+      </ul>
+    </div>
+  </section>
+ <script src="./JS/index.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.2/luxon.js" integrity="sha512-dnGGSoHcLej84Nu756Hffi8rrR2x8XHY/uv+X0MHr7Kz2LXG9WWvleK9pn2tDGzdz4KEnttgrcLiQUG35yv9eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="./JS/nav.js"></script> 
+ <footer>Copyright</footer>
+</body>
+</html>
+
+

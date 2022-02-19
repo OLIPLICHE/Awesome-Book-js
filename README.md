@@ -1,7 +1,7 @@
 # AWESOME-BOOK-JS
 
 
-> In this project, we will build a basic website that allows users to add/remove books from a library list of books. We will achieve that by using JavaScript  class, objects and arrays.
+> Awesome Books App is a Single-Page Application(SPA) that allows you to add books by typing in the book title and author name.
 
 ## Built With
 
